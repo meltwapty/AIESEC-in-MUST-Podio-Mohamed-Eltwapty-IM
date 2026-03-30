@@ -1,0 +1,358 @@
+{
+  "members": [
+    {
+      "id": 1,
+      "name": "Mohamed Eltwapty",
+      "role": "EB",
+      "fn": "TM",
+      "email": "mohamed.eltwapty@aiesec.net",
+      "updated": "3/20/2025",
+      "files": []
+    },
+    {
+      "id": 2,
+      "name": "Sara Ahmed",
+      "role": "VP",
+      "fn": "oGV",
+      "email": "sara.ahmed@aiesec.net",
+      "updated": "3/18/2025",
+      "files": []
+    },
+    {
+      "id": 3,
+      "name": "Omar Hassan",
+      "role": "VP",
+      "fn": "oGT",
+      "email": "omar.hassan@aiesec.net",
+      "updated": "3/15/2025",
+      "files": []
+    },
+    {
+      "id": 4,
+      "name": "Nour El-Din",
+      "role": "TL",
+      "fn": "iGV",
+      "email": "nour.eldin@aiesec.net",
+      "updated": "3/22/2025",
+      "files": []
+    },
+    {
+      "id": 5,
+      "name": "Yasmin Khalil",
+      "role": "TL",
+      "fn": "iGT",
+      "email": "yasmin.khalil@aiesec.net",
+      "updated": "3/19/2025",
+      "files": []
+    },
+    {
+      "id": 6,
+      "name": "Ahmed Mostafa",
+      "role": "Member",
+      "fn": "B2B",
+      "email": "ahmed.mostafa@aiesec.net",
+      "updated": "3/21/2025",
+      "files": []
+    },
+    {
+      "id": 7,
+      "name": "Fatma Ali",
+      "role": "Member",
+      "fn": "oGV",
+      "email": "fatma.ali@aiesec.net",
+      "updated": "3/20/2025",
+      "files": []
+    },
+    {
+      "id": 8,
+      "name": "Khaled Nasser",
+      "role": "TL",
+      "fn": "F&L",
+      "email": "khaled.nasser@aiesec.net",
+      "updated": "3/23/2025",
+      "files": []
+    }
+  ],
+  "ogx": [
+    {
+      "id": 1,
+      "epName": "Ali Ibrahim",
+      "epId": "EP001",
+      "oppId": "OPP001",
+      "contactType": "New Contract",
+      "product": "oGV",
+      "stage": "Approval",
+      "updated": "3/15/2025",
+      "files": []
+    },
+    {
+      "id": 2,
+      "epName": "Mariam Youssef",
+      "epId": "EP002",
+      "oppId": "OPP002",
+      "contactType": "Re-Approval",
+      "product": "oGT",
+      "stage": "Approval",
+      "updated": "3/18/2025",
+      "files": []
+    },
+    {
+      "id": 3,
+      "epName": "Tamer Said",
+      "epId": "EP003",
+      "oppId": "OPP003",
+      "contactType": "New Contract",
+      "product": "oGV",
+      "stage": "Approval",
+      "updated": "3/20/2025",
+      "files": []
+    },
+    {
+      "id": 4,
+      "epName": "Hana Samir",
+      "epId": "EP004",
+      "oppId": "OPP004",
+      "contactType": "New Contract",
+      "product": "oGT",
+      "stage": "Realization",
+      "updated": "3/10/2025",
+      "files": []
+    },
+    {
+      "id": 5,
+      "epName": "Karim Adel",
+      "epId": "EP005",
+      "oppId": "OPP005",
+      "contactType": "New Contract",
+      "product": "oGV",
+      "stage": "Realization",
+      "updated": "3/12/2025",
+      "files": []
+    },
+    {
+      "id": 6,
+      "epName": "Rana Tarek",
+      "epId": "EP006",
+      "oppId": "OPP006",
+      "contactType": "New Contract",
+      "product": "oGV",
+      "stage": "Completed",
+      "updated": "3/05/2025",
+      "files": []
+    }
+  ],
+  "icx": [
+    {
+      "id": 1,
+      "epName": "John Smith",
+      "epId": "EP101",
+      "oppId": "OPP101",
+      "stage": "Approval",
+      "updated": "3/18/2025",
+      "files": []
+    },
+    {
+      "id": 2,
+      "epName": "Maria Garcia",
+      "epId": "EP102",
+      "oppId": "OPP102",
+      "stage": "Approval",
+      "updated": "3/20/2025",
+      "files": []
+    },
+    {
+      "id": 3,
+      "epName": "Liu Wei",
+      "epId": "EP103",
+      "oppId": "OPP103",
+      "stage": "Realization",
+      "updated": "3/12/2025",
+      "files": []
+    },
+    {
+      "id": 4,
+      "epName": "Anna Müller",
+      "epId": "EP104",
+      "oppId": "OPP104",
+      "stage": "Completed",
+      "updated": "3/08/2025",
+      "files": []
+    }
+  ],
+  "b2b": [
+    {
+      "id": 1,
+      "company": "TechCorp Egypt",
+      "owner": "Ahmed Mostafa",
+      "product": "GT",
+      "amount": 15000,
+      "slots": 3,
+      "stage": "Visit",
+      "dealComments": [
+        {
+          "type": "stage",
+          "text": "Stage changed to Visit",
+          "ts": "3/22/2025, 1:00:00 PM"
+        },
+        {
+          "type": "comment",
+          "text": "Meeting scheduled with CEO",
+          "ts": "3/22/2025, 2:30:00 PM",
+          "author": "Ahmed Mostafa"
+        },
+        {
+          "type": "comment",
+          "text": "They want 3 slots for this cycle",
+          "ts": "3/22/2025, 4:00:00 PM",
+          "author": "Ahmed Mostafa"
+        }
+      ],
+      "files": []
+    },
+    {
+      "id": 2,
+      "company": "Global Solutions",
+      "owner": "Sara Ahmed",
+      "product": "GV",
+      "amount": 8000,
+      "slots": 2,
+      "stage": "Raised",
+      "dealComments": [
+        {
+          "type": "stage",
+          "text": "Deal created — Stage set to Raised",
+          "ts": "3/18/2025, 10:00:00 AM"
+        },
+        {
+          "type": "comment",
+          "text": "Contract pending review",
+          "ts": "3/19/2025, 11:00:00 AM",
+          "author": "Sara Ahmed"
+        }
+      ],
+      "files": []
+    },
+    {
+      "id": 3,
+      "company": "Innovate Labs",
+      "owner": "Omar Hassan",
+      "product": "GV",
+      "amount": 25000,
+      "slots": 5,
+      "stage": "Prospect List",
+      "dealComments": [
+        {
+          "type": "stage",
+          "text": "Deal created — Stage set to Prospect List",
+          "ts": "3/10/2025, 9:00:00 AM"
+        }
+      ],
+      "files": []
+    },
+    {
+      "id": 4,
+      "company": "Future Academy",
+      "owner": "Ahmed Mostafa",
+      "product": "BD",
+      "amount": 12000,
+      "slots": 0,
+      "stage": "Lead",
+      "dealComments": [
+        {
+          "type": "stage",
+          "text": "Deal created — Stage set to Lead",
+          "ts": "3/15/2025, 3:00:00 PM"
+        }
+      ],
+      "files": []
+    },
+    {
+      "id": 5,
+      "company": "Smart Industries",
+      "owner": "Khaled Nasser",
+      "product": "GT",
+      "amount": 30000,
+      "slots": 4,
+      "stage": "First Contact",
+      "dealComments": [
+        {
+          "type": "stage",
+          "text": "Deal created — Stage set to First Contact",
+          "ts": "3/12/2025, 8:00:00 AM"
+        }
+      ],
+      "files": []
+    }
+  ],
+  "activity": [
+    {
+      "user": "admin",
+      "action": "deleted",
+      "module": "OGX",
+      "recordId": "#7",
+      "ts": "3/30/2026, 10:59:52 PM"
+    },
+    {
+      "user": "admin",
+      "action": "created",
+      "module": "OGX",
+      "recordId": "#7",
+      "ts": "3/30/2026, 10:59:47 PM"
+    },
+    {
+      "user": "Mohamed Eltwapty",
+      "action": "created",
+      "module": "Members",
+      "recordId": "#8",
+      "ts": "3/23/2025, 2:00:00 PM"
+    },
+    {
+      "user": "Sara Ahmed",
+      "action": "edited",
+      "module": "OGX",
+      "recordId": "#3",
+      "ts": "3/22/2025, 6:00:00 PM"
+    },
+    {
+      "user": "Omar Hassan",
+      "action": "created",
+      "module": "B2B Deals",
+      "recordId": "#4",
+      "ts": "3/22/2025, 4:00:00 PM"
+    },
+    {
+      "user": "Ahmed Mostafa",
+      "action": "edited",
+      "module": "B2B Deals",
+      "recordId": "#1",
+      "ts": "3/22/2025, 1:00:00 PM"
+    },
+    {
+      "user": "Nour El-Din",
+      "action": "created",
+      "module": "ICX",
+      "recordId": "#2",
+      "ts": "3/21/2025, 11:00:00 AM"
+    },
+    {
+      "user": "Fatma Ali",
+      "action": "deleted",
+      "module": "OGX",
+      "recordId": "#5",
+      "ts": "3/20/2025, 5:00:00 PM"
+    },
+    {
+      "user": "Yasmin Khalil",
+      "action": "edited",
+      "module": "ICX",
+      "recordId": "#1",
+      "ts": "3/20/2025, 12:00:00 PM"
+    }
+  ],
+  "nextId": {
+    "members": 9,
+    "ogx": 8,
+    "icx": 5,
+    "b2b": 6
+  }
+}

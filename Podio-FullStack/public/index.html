@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AIESEC in MUST Podio</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<!-- LOGIN OVERLAY -->
+<div id="login-overlay">
+  <div class="login-card">
+    <img class="login-logo" src="data:image/png;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4gHYSUNDX1BST0ZJTEUAAQEAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4AABAAEAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAAgAAAAcAHMAUgBHAEJYWVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UAABjaWFlaIAAAAAAAACSgAAAPhAAAts9YWVogAAAAAAAA9tYAAQAAAADTLXBhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABtbHVjAAAAAAAAAAEAAAAMZW5VUwAAACAAAAAcAEcAbwBvAGcAbABlACAASQBuAGMALgAgADIAMAAxADb/2wBDAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx7/2wBDAQUFBQcGBw4ICA4eFBEUHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh7/wAARCABlAfEDASIAAhEBAxEB/8QAHAABAAMBAQEBAQAAAAAAAAAAAAYHCAUEAQMC/8QAUhAAAQMDAQQDDAUICAMHBQAAAQIDBAAFEQYHEiExE0FRCBQXGCJVYXGBktHSMlaRlKEjQlJicoKTwhUWNkN1sbPBU4OyJDM0otPi8DVUc3TD/8QAGwEBAAIDAQEAAAAAAAAAAAAAAAUGAwQHAgH/xAA+EQABAwICBQoEBQQBBQEAAAABAAIDBBEFIRIxQVGhBhMVU2FxgZGx0RYiwfAUMjOS4SNSYnKCQkOi0vHC/9oADAMBAAIRAxEAPwDZdKUoiUpSiJSlKIlKUoiUpSiJSlKIlKUoiUpSiJSlKIlKUoiUpSiJSlKIlKUoiUpSiJSlKIlKUoiUpSiJSlKIlKUoiUpSiJSlKIlKUoiUpSiJSlKIlKUoiUpSiJSlKIlKUoiUpSiJSlKIlKUoiUpSiJXO1RIeiaaukqO4W3mYbzjawAd1QQSDx9Iro1ydZf2PvX+Hv/6aqywAGVoO8LHKbMdbcsrDaztEx/ad/wC7s/JX3wsbRPrO/wDd2fkqEDlSu19GUXUt/aPZcf6TrOud+4+6m/hY2ifWd/7uz8lPCxtE+s7/AN3Z+SoRSnRlF1Lf2j2TpOs6537j7qb+FjaJ9Z3/ALuz8lPCxtE+s7/3dn5KhFKdGUXUt/aPZOk6zrnfuPupv4WNon1nf+7s/JTwsbRPrO/93Z+SoRSnRlF1Lf2j2TpOs6537j7qb+FjaJ9Z3/u7PyUVtX2ipOFalkA4B4x2evl+ZX4bItJOaw1pFgLbJgMEPzVdQaB+j61HCfaT1VPu6n003FuFs1LFZShuQnvSRujAC0jLZ9qd4epAqLldhkdcyiMLdJwJ/KMtw1bc+G9ScTcSkon1gmdZp3nPedezLjuUI8LG0T6zv/d2fkp4WNon1nf+7s/JUIpUp0ZRdS39o9lGdJ1nXO/cfdTY7WtoQ56oeH/IZ+Svnha2hfWh7+Az8lSnZhtdj2KLbrBcdOwRARutOSo43XOJ/wC8UnBCz1niM8T6K0j3pF/+2Z9wVVcTxCDDZNCWhbY3sflzt/xy7laMOoZ6+PTirXXGsfNl/wCSyL4W9oP1oe/gM/JX3ws7Q8Z/rO/j/wDAz8lX5ti17H0Fb4rcS2sSrhNKyyhYw2hKcZUrHE8wABjPHjwrMty1FPuGrTqaU3EXNMlEgoDIDJUjGAUdafJAI6+OTk5qRwnmMQj540bGt2H5Tc92jq7VH4pz1BIIvxbnO2jMWH7uC7x2tbQhz1Q9/AZ+Svnhb2g/Wl7+Az8lXRsd2qHWd4cslztEeJMSwXm3WCS2sJIBG6eKTxyOJ6+XXavRNf8ADR7oqFrcYp6GUwzULQe9v/qpejwqesiEsNa4jx/9lkLwt7QfrS9/AZ+Snhb2g/Wl7+Az8lXFrrbRbNN6olWNjTq55iKCHnunS2N7AJCRunOM44445rmRO6CsqljvvS0tpPWWnkOH7CE1vxySSRiRuGtsRcZs9NG60nxsY8xuxBwIyOTvdVh4W9oP1pe/gM/JX9eFjaJ9Z3/u7PyVpbSOsNNasskq5WlwONxknvll1rdca4E4UOwgHiMg4PHgaxmpW+orKQneOcAYAz2VtYQ+lr3yMkpGxllsiAdd/wDEblrYq2poWRvZVOeH31E7Ldp3qbeFjaJ9Z3/u7PyV6IO0rajOWUQb1cJSxzSzCbWR7AipTsc2TxblbEaq1eS3bdwux4pVuBxAGekcPMI6wBjPM8OB9F426R7WVW7ROm4LFvZJS048koSodoaRu7o9Zz2gV5llpZJnQUVK2Qt1mzQ0eNsz3L1FHVRxNmrKlzA7ULkk+F8lDZu0zahBcDU29z4qzyS9DbQT7Civw8LG0T6zv/d2fkqe2LbrGuJ/o/WunYb0J3yXHI6N9CQf0ml5yO3Bz6DVhWnZts1uEmPqO3WaHJZdT0jQQ4pUZeevoyd32Yx6M1qVFdTUOVbRBu4gNIPjYWW1BR1FbnR1hcNoJcCPW6z/AOFnaH9Z3/4DPyV88Le0H60vfwGfkrpWXXUnZ9rbUjNrtFufiu3F1BacQUqQhDiwlKFD6IweWCOArSGhb7C1XpSDf40ToESkqy0rBKFJUUqGcceKTx6694pVQYe0SGiaWG1j8u0XtbRNl4w2mnriYxWODxe4+bYba9JZd8Le0H60vfwGfkp4W9oP1pe/gM/JWqNXXeBprTc2+TWN9iI3vlCEjeUSQAkZ7SQPbVPI7oSEfp6OUOPVNSeH8Oteir21zC+nw9rgMtbR6tCz1dE6jcGT17gT2O+jlXHhb2g/Wl7+Az8lfRta2hHlqh4/8hn5KuCxbdtITZKGLlbZtsCzjpVIS42n1lPlf+WvF3VUiKdJWRtkNKL8wutuIwQUBs8iOo76a2IamM1cdNPQNZpbflOr/jn5rDLTyClfUQ1pfo7Mx/8ArLyVW+FjaJ9Z3/u7PyU8LG0T6zv/AHdn5KhFWnss2PXLVMdq7Xh5y2WlwbzWE/lpCe1IPBKexRBz1Ag5qarIcLoo+dnjYB/qOGShqSbE6yTm4ZHE/wCx45rhHaztDHPU7/8AAZ+Sv0RtS2lLSFo1DLUk8iIrRH/RVxaid2YbJ4rTbdljybqpG8y1uB2QofpKWvO4nPqzxwDioFP2/wCqnJGbfabPFYB8ltxDjqvaoKSPsAqJp5WVg06ahaWbC7RbfuFipWeN9IdCprXB25ukbeNwot4WdoeSP6zv5HMd7s/JX3wsbRPrO/8Ad2fkqYQttFru6kxtbaLts5hXBTrDYUU+kIcz/wBQqSL2Q6C1jEjXzSd1fhQ3lgrQyekQRnykhK/KbX1cTgfo19lqaKkI/G0gjB2hrXN8wL8F5jp6uqBNHVl5GwlzT5E/VVX4WNon1nf+7s/JX6xNr+0OPIQ6dQF8JOS27GaKVeg4SD9hBr290VZ7ZY9dRINphMw4wtbJ6NpASCQtxOT2nCRkniaiOhbdabtqmJBvs9UC2rDin30qCVJCW1KABIIySAOXXUlBBh09IKnmG6JF7aIvbwCj5psQhqzTc864NvzG3qrD1Vtu1X/WCO/aVMQ4LbDLi4i2UrDqlNpWoKURvAZUQN0jgBVg7dtb37Tuk7PIsg7xfuZ/KOqQFqZAQFboBGMnJ4kdRx2iqtl0LTWr9rSm7kw5HgqBct8TfACui3ejaXwOR0aSTjGd301IO6j1XFn3KJpeEekVb1l6Uscg4pOEoHpAJJ/aA5g1By4fSnEaamjgHygl2WVrZX32O/bkpqOuqBQVFQ+b8xs3PbfZuuPdTzuetY3vVlhuAvryZMiE+lKJHRpQVpUknBCQBkYPHHWK623DU110roRy42fdTLcfQwl4oCuhCskrweBPDAzwya9uzCwWHTGio4szy3IklsTHJTyhvObyQd4kAAAJwAOoDtyao3bNtYVqxh6w2aOGrN0gK3nE/lJBScggfmJyAcczwzjiKhKSibiOLufTx/0muFwcgB3dtjl9FMVVY6gwsNnk/qFpsRmSe/s3rv7L9q+oTp3U0zUL6bim1xEvx3FtpQouKVuJbUUgAgqI6s8/Z+eyfa1q29a8hWe8LjS4s5akYQwEKaISVApI6uHHOeFeLV7emNObB7czZ2kifqZuMuSvfKlLLW6twnJOAlfDA4ZVXc7mDTVgkW9zVB6R68Rn3I+6pfksgpGFBPaUqIyc9YqXqosPbR1FUYLAktbkMiBa43fNfUoumlrnVVPTCa9hpOz13N7dvy2V6UpUP2q67haFsaZTrffM6SSiHGzjfIxlSj1JGRn1gddUKnp5KmURRC7jqV0nnjgjMkhs0a1RrW2bXDmsm5HThMJUoI/ozvdGNwqxuZxv73pzz9HCtRVm3ueLJa9V6wu98vTKXZkN9uaw2lRSgOLWtRO71gEJI48OHOtJVYuVIpoqhkEEYaWDOw13AI77b1BcmzUSQOmmeXBxyvstceHclQTbjq6do7RXftsKEzpUhMZlxSQoNkpUorweBwEnGeGSMg1O6zl3VV9751FbtPNLy3CZL7wH/Ec4AH0hIz+/WjyfohWV7GOF2jM9w/mwW5jlWaShe9psdQ7ypd3OmttRapVeId+ld+96hpxp8tJQpO8VApO6ACPJyOGefoxb9QPYTA0/G2e2+dYoyWlzWUKmq31KUt9A3V5yTjygrAGBx4DjU8rDjT4n10nNM0Gg2ta2rI5DtWXCWSto4xK/SNr3168xn3JVDd0FtB1RYtXR7LY56rfHbioeWpDaSp1airmVA8AAOA685zwxec+XGgQn5sx5DEZhsuOuLOEoSBkk+yst6kvFr2mbZ4Ad6eNapDjUJtWQlxSATg9eCpSjjsyKkuS9K2SodNKzSYxpJuLi/wBTrUfyiqXMgbFE/Re8gDOx/wDi0Bskv87U+z62Xm5BPfbyVodUlOAsocUjex1Z3c+vNSqvFYbVCslni2m3NdFEithtpOcnA6yesk8Se017agKp8ck73xCzSTYbhfIKbp2PZC1shu4AXO82zSlKVgWZKUpRErk6y/sfev8AD3/9NVdauTrL+x96/wAPf/01Vmp/1W949Vjm/Td3FYgHKlBypXeFxFKUpREpSlESvoBJAAJJ4AAc6+VaGwDS0e4XmRqu87rdmsYLylufRU6kbwz6EDyz6d3trVratlHA6Z+zidg8StqipX1c7Ym7eA2nwV17EtGjR+jmkSWwm6TsPzSeaTjyW/3Qcesq7a6O1jT/APWXQF0tiG9+R0XTRh19KjykgevG76iapXRG0qTP25/0tKdW3brqrvBLKlcG28/keHLO9jJ/XX21pOuV4tFV0Fc2omPzus/uO7w1dy6bhktLW0boIh8gu3w3+OtYKHEUqYbZNPf1b2iXOE2jdjPr76jcOHRuEnA9AVvJ/dqH11innbURNlZqcAfNcuqIHU8rona2my9NrjmXc4kRP0n30Nj1qUB/vW7AMAAdVYm2fs98a80+xjIXc4wPq6VOfwrbNULlw+8kLdwPG3srxyNZaKV28j6+6zX3VknpNb22Jngzbgv2qcX8oqnqsjukZPfG1WY1n/w0dhr7Ub/89VvVuwKPm8OhH+IPnmqtjb9PEJT228slZ3czZ8KDf/6T38tanrM3crRy5r+dII4M21Yz6VON4/AGtM1z/lg4HEbbmj6q88lWkYeDvJWJ9oT5k6+1A+TneucjHq6RQH4Vwqktz0tq+Zd5j50tfN92Qtah3g6cEqJ57uOurL2G7K7y1qOPqPUsBUKNDPSR4z2Okdcx5Kin80J58cHIHDFX+bEqagpNJzwdEZC4uTbUFR4sNqa2qLWtIucyQchfWVBdlWsYmk/6eTNakOt3G2rYbDIB/K/mZyRgeUrjxx2Go5pGA1dNVWe1yM9DLnMMOYOPJW4lJ/A1/Op5SJ2prrNbACJE151IHIBSyR/nX3Ss9u16otNzez0cOcy+vAz5KHEqP4CtnmA1skzBZ7wL94GS1+fJdHC83Ywm3cTmtia+tsi4aBvNqtjYD70B1lhtPAE7hASOzPL21itxC2nFNOoU24hRSpChgpI5gjqNbxaWh1tLra0rQsBSVJOQQeRBqH642Z6T1ctcmfBMaeocZkU9G4f2upfV9IE45YrnHJzHo8N0opmnRcb3GsFX/H8EfiIbJE6zm7DqIWPKuzuW9UOx71K0pJfJjSkGRESo/RdT9NKf2k8cfqek15NU7A9RQd96wz412aGSGnPyD3qGSUn15Hqqqp8O42a5LiTY8mBNYOFIWChaf/nb11eZpKLHKV8MUgNx4g7DbIqmwx1mDVLZpGEW8iNovqXs1spKtaX1SVBSTcpJBByCOlVWmu5zB8ElrznBckY/jLrJtbB2Hxu9NlNhb3cb7CnffWpX81RHLACPDo4/8hwBUpyUJkr5JP8AE8SFzO6Qf6LZRPbzjp32EevDqVfy1lGtSd0vDuc/QkSJa7fLmrVcW1OIjMqcUlIQviQkE4zj8Kz/AG7QetZ8hLEfS13C1HALsZTSfapYAHtNeuSUsMGHEveBdxOZA3D6LzypilmrwGNJs0DIHtP1Ubqa661hF1BorSVlZZfTJs8ZbUhawN1XBCUbpzk8EZOQOY51OdfaVToLYS3bJJZduVyuTSpTiBkBQSpQSk88JCMesntqkam6SaHErVDRkxx0TvytfuzKh6qGbDrwE5vaNIbs724Kz+5+0K1qrUDlzujAdtNuIKm1DyX3jxSg9qQOJH7I5E1o3Wt+jaX0rPvkhIUiI1lCOW+s8EJ9qiB7a4uxOyIsWzW0Mbm69JaEt/IwStwb3H0hO6n92ob3VtyUxpS1WtC90zJhcUP0ktp5fatJ9gqhVcxxrGWwk/IDYDsGvzt92V3pYW4RhLpQPntc951eV1nu9XOdebtJutyfU/LkuFx1Z6z2DsAGAB1AAV46UrqLWhoDWiwC5q5xcS5xuSlTvYvrd7R2qmuneV/RE1aWprZPkpzwDvoKevtGR2VBKVhqqaOqhdDILgrNS1MlNK2WM2IVtd1SQdosFQIINoawR1/lnqqWvbdbrcbqqOu4zHZSo0dMZkuHJQ0nO6n1DJ+2vFWHDqU0lKyBxuWiyy4hUtqql8zRYOK9VpnybXdItyhr3JEV5DzSuxSSCM+jhX83GW/PuEmfKXvvyXlvOq7VKJUT9pNeelbeg3S0rZrV03aOhfLWr6a1G9B7ldpRdPfEjpLa2r9UurBHsbCh7KoWu9Mn6hToiBa5SHRYlylyYalN+SXE5SsJV1/SOQe3PXXBqOwyiFLzpFvne45d+rw9VIYlWGp5oG/ysaM+7X4r1Sp8qTBhwnnCpmGlaWE/ohSioj3iT7asTuarncIm0pmBFKlRZ7LiZSOrCEKUlXrBGM/rHtry7TdFsWTRmktRRAlsXCA0iW3yPTFvf38ekEg9m6O2uPspkalhasTcdLQzOmQ2FPPRgRl5jKQtIHMnyhwGT1gHFYal8Ndh0vN2sQ4Z5C9zr8c7+Kz07JaLEY+cvcFpyzNrD6ZLZNZJ28alVqTaBMDRJh2wmGzjkSknfV7VZ49gFaN0hrqxartrz1rk7k1hsmRCeG48yoDiCk8wDwyMj28Ky8mOwzsrfuj5Cp9zvKWkbx8otNNKUtQ/fcSD6hVR5K0pp6mR8zSHts0A/wCV7nyHkrTylqBPTsZE75TdxP8Araw8yFKe5hkJjbQpjjryWmBanlOqWrCUpC2zkk8ABjnVv6Z2tadv+uXtNRN5LZTiJMWcIkuDO8kDq4fRJ54PLhnJ7bjjYWltxaA4ndWEqI3k5Bwe0ZAOPRX6QRKVNYEEPmWXE9AGAek38+Tu4472cYxxzVkxLk7BXzPnldmRYdltvb7cK7h+PzUUTIY25A3PbfYNy3VJeajR3ZD7iW2WkFbi1HASkDJJ9lYn1reH9Q6puF+fQtAnPKdaCxjDYO6genASE+sGtIa8uWoWdhTxvcVDV+nMNwlsNLBK1urCMcOG8UkkgcAcgVn7aYGYuom7IxuFFliNW9S0jAW4gFTqselxblQvI+mEL5HHMkkXGqzbXtvuSPJTPKucyxsbqAsbdpvbyAKvHuWYb7GhJcpcxp1mVNUpthCslkpASd7sUcA47N09dW5Wf9BtP6Bs1p15Afcf0vc4zTd6jk5VFdyEdMkfnAOZ4DiAojjwIv5paHW0uNqCkLAUlQPAg8jVb5QRk1j5wbtcT2WIyLT2jjkdqsGCPtSshIs5oHiDqI7DwzGxVN3Ud7VA0RFtDTgS5c5IDg6y035Sv/N0f41m22S12+5RZ7ed+M8h5OO1Kgof5Vc239p3UO0hy2oWe97NYXpjuPzFBC1/iehHtqkTjBzyq/cmYGRYe1m13zH/AJauACo/KOZ768v2DIeGviVvUEEAg5B4ilVbst2gS1ymtHa2jrtl/aQlLC3k7qZaerHVvergrq48KtKuX1lHLRy83J4HYRvB2hdHpaqOqj02eI2g7iNhSlKVqLZSlKURK5Osv7H3r/D3/wDTVXWrk6y/sfev8Pf/ANNVZqf9VvePVY5v03dxWIBypQcqV3hcRSlKURKUpRF67Pbpd3usW1wGi7KlOpaaT2knr7AOZPUAaurbL0mjtA2jZ3Y40hSH2w9OkoaVh3yuIyBzUsEkdQCRyNeLYjbrbpHTE3abqNJDaQWLc2BlayTuqKR2qPkjsAUTwOa9qu6Jk7x3dJNAZ4ZuB/8ATqpV89VV1rfw0XOMiOeYAL/H+31VroYaakoz+Il0HyjLIkhvh/d6KlEwrglQUiJLSoHIIaUCD2jhWztn94fv+jLXdpbDjEl9gdOhaCghxJKVHB6iQSPQRVOeMTK+qTP38/8Ap1Pdku1CJruTLgrtxts6OgOpa6fpQ63nBUDujGCRkY6xx7InlIK+rpxJNT6IYb30gcj2DwUnyfNDTTmOGfSL9miRq7fNRnuqdP8AfNht+pGW8uQne93yB/dL+iT6lgD981nOtw6ss7OoNNXGyyMBEyOpreIzuKI8lXrBwfZWI5cd6JLeiSUFt9hxTbiDzSpJwR9oqU5G1vPUhgdrYeB/m6jeVtHzVS2canjiP4spZsUY742qafbxnEkr91Clf7VsSsodzlH6favb3MZDDL7p/hlP81avqA5avvXMbuaPUqc5IMtROO9x9AsebbJHfO1XUDgPKQG/cQlP8tQ2u5r+QZWu7/IJzv3KQQfR0isfhiuHXRKFnN00bNzQOCoNc/TqZHb3H1V7dyTGJl6ilkcEtx20n1lwn/IVeV+uDdpsc+6Op30Q4zj6kg4yEJKsfhVTdyfHCdJ3iXji5PDef2W0n+erA2rOBrZpqNZOM215PtKCP965fjtqjGnMOolo4ALpOC3gwlrhrAJ4kqh5O3vWrjxW1Gs7LeeCBHWrh6SV8fwq0tkW01Ws7VcW7hFZiXO3tdKvoiejdQQfKSCSRgjBBJ5jjxwMrV09PX262CRIkWiWqM7IjrjOqCQd5tWMjiOHIceYxV3xDk1RzwFkLA12w+6ptByiqoZw6Z5c3aPZctH0R6q+1+sSNIlyW4sSO7IfcO6200grWo9gA4mpPoTQ8/V0S+LgyENSbVHDwjKQSp8ne8gceB8kjj1keup2eoigYXyOsBbibDioWCnlneGRtuTfgL+il2yPbDJ0zGZsmoG3Ztpb8lh1HF6Mn9Hj9JA7OYHLIwK0LpvUth1HF74sl1jTUYBUltflo/aSfKT7QKxBX6Rn3o0hEiM84w8g5Q42spUk9oI4iq7inJWmrXmWM6Djr3Hw9lP4bymqKRojkGm0eY8VvGoZta0NC1pp11rokJusdClQZHIhXPcJ/RVyPZz6qo/Z/tn1JY5bMe+yHLxbMhLnS8X20/pJXzURzwrOe0c60/HfZkRm5LLiVsuoDiFjkpJGQfsqi1mH1mB1DJCe4jUbfeYV0pK6kxmBzAMtoP35FYPUCkkKBSRzBGCK2zs/jGFoSwRFDCmrbHQr1htOfxrGFxWJ94krjjhJkLLY/aUcf51uaM0liM0ykYS2gJHqAxVm5bSnmoGnbc+nuq7yPiAkmcNlh6+yrjbltEuGhmbaxaYkV6VO6RRXIClJbSjd6gRkkq7eqqxte3zVrM1tdwg2uXG3vyjaGlNrI/VVvHB9YNe7usnd7UlkY/QhuL95eP5apWt3AcFopsOjfLGC517nbrP0WnjeMVkNe9kUhAbaw8Ar+7pa8RbvoPTE6EsqjTnu+W8jBx0fDI6iN7jVCNNl51DSea1BI9Z4V77hfLpPs1utEuWp2FbekEVspA3N85Vxxk8R15x1V5EMS0RRcExnu90uhsP7h6PpMbwTvct7HHHPFTmFUPR9MIL6ibeJNvG1lD4nWivqeetsF/AZ8VuuO0hiO2w2MIbQEJHoAxVDd1wF9Jpk/mYlD2/kavGyz2brZ4VzjqCmZbCHkEdikgj/ADqt+6ZsTl00Am4x0FbtrkB9QAyeiUN1f2ZSo+hJrmPJ+UU+KRmTeR4kEepXRcciM+GyBm4HyIPoFl2lKV2FcmSlK/aFFkzpjUOHHdkSHlBDbTaSpS1HqAHOhIAuV9AJNgvxpXpucGXbLg/AnsLjymF7jrSuaT2V5q+NcHC41L65paSCM0pSvTboE24yDHgRHpTwQpwoaQVK3UjKjgdQAo5waLnUjWlxsBmpq8ideNkNgttrtsqc7Hu8lDpYbKy2pSUqQkgfpb5IP6pqAn6J9VWHsT101oyfdu+yTFlwlqQkZOX2wS2P3slPrI6hVeAcMGtCjbJHNLG5tm3uDv0rk+RyW/WOjkiikDvmtYjdo2A89aszb7fBMullsMdX/ZbVbWeHa442lWfc3PxrkbELwiy7TrRIec3GJDhiuHqw4N1OfRvbp9lcVLU7V2rY0SKnelzVMxkZ5DdQlGT6AE5PoFSDbLoheiNTttw+l/oyUgOQ3SeIUkALST2g8fUoVqMip44G4Y82c9p/k+ZJHcVtySTyVDsRYLtY4fxwAB7wtB6t0HCkXp7WFlYDepWYziY+V7rLzhQpILgxxODjOR1ZyBVF7VtJztKaH0fCuDrXfKe++maQrIQpS0KwO3AwCe0D0VojZnqEao0PbLwpQL7jIRIx1Op8lf2kEj0EVQfdM6hj3fW7FthvpeatTBacKeQeUrKx7AEA+kEdVVLk5LWfjxSvzDL33iwc0C+67slaMfjpRQmoZrfa3bcgk99gFE9m2j39bXKdaochuPLZh98sqdJ6MkONpIVgE4wsnh1gVofZvsmsWjprF1EmTOurbSkF1ZCWwVcCUoA4cOHEnrqs+5QjKXrC7TADutW/oifStxJH/Qa0hTlXitSypdSsfZlhcd41d3YvnJnDad1M2pey7rmx7j6qP6n0pD1Be7HcpkuWgWeQZLUdtQDbrnDdUsEcSkp4es9tZe23Wd6zbTry24khEp4zGlfpJd8okepW8PZWwao3usLdBXbrPde+GET2nFMdEVgOONKGd4DmQlQ9m/WryVxB8dayFxu0ggdm319Vs8pqFklG6Vos4EHv2enoul3OBiX7ZbLsd0jMy4seatosuoCkqQrdcGQf1io+yrfSkJSEpACQMAAcBVH9yUtRteoGyDupfZUPWUqz/kKvGo7lE3QxGVg1Xv4kAlb+BO06CJx12t5EhZqu8u4O2baZqudCejSJ0lm2Rytspw30m6tAJ5+QlANU+RkYrTPdUS+h0BCipVhUi4oBHalKFk/ju1Vmntnb122PXLVbTa1TWpPSR0j8+O2CHMDtyVH/AJeOur1guIxNo/xEo0Q9waB3ANA4X81TMYoJX1fMRHSLWlx8SXH1srhs8G27WtkUA3LcTcENFoSggFceQjySscuCsBRTniCPZNNEWedYdMRLTcbu9d5DAUFSnUkKUCokDiSeAIHEnlVMdyhfdybdtNur8l1AmMJ/WGEOe0go901oGqRjrJaSofR3/p30gN1923s8FcMGfHVQMqrfORok92/1SlKVAqaSlKURK5Osv7H3r/D3/wDTVXWrk6y/sfev8Pf/ANNVZqf9VvePVY5v03dxWIBypQcqV3hcRSlKURKkOzvS8nV+rIllYKkNrO/JdT/dMp+kr18gPSRXBYDZebDylJaKhvlIyQnPHHpxWgtDbQNkmjoCo1lauKFuAdPIcjFTrxHLeV/sMAZOBUVi9ZPTwkU8Zc86rC4HafopXCaSComBnkDWDXc2J7B9VxO6hlJhP6f0tCbEe3w4heQ0ngnn0aB+6Eq941StaK1dtE2QarYbav0OZL6LPRL72WhaM88KSQQOA4Zxwqk9dJ0qL5nR65yrappJIljykuZOQOspxu8+OSa0eT0skdO2mlhc1wvckZHO+vet3H4o3zuqI5WuBtYA5jK2rcuDU52ETXYW1WylreIfWthxKfzkqQrn6AcH2VBquPZXqDZTpFMa6vru0m+dCA447HylhSk4WGwOAHMZOTjr4kVv4xIRSPY1heXAiwF9Y27lo4RGDVMe54aGkG5NtR2LSVZU7o3T6rNtEenNt7sW6oElBA4dIPJcHrzhR/bq3fDnoP8A49x+6H41wtabRtk+r7YmBe27k6htW+04iOpLjSuWUqz+B4Hsqh4DBiGG1YldA4tIsbD72q741LQ4hTGNszQ4G4zCincqQlva5uE7cJajW8oKscApbiMfglVaWqk9HbTdlekrV/Rtki3Rloq33Fqj7y3VfpKUVcT+A6q7fh20L23T7r/7q843SV+IVjpmQODcgLjcvWD1NFQUrYXTNJ1nPes0X5D7d9uDcpBRITKdDqTzCws5H25rxVdG0zVuybVECbNbtVxF8U0egkNM9EVOYwkr8rChyySCcDhUE2au6Fjz5EjW7M+S2gJ72Zjp8hRyd4rwQezA5cTmr9TV8jqUyPhc0t/6bZnu3jyVHqaFgqubZM0h22+Q7+3zV+9zXAXC2XsPLbKDMlOyBkYyMhAP2IFdXboXU7J78WUlSuhQDj9HpEbx+zNcCLtv2fRYzUaM1cGWGkBDbbcMJShIGAAAcAAdVfXtuOgXmVsvIuLja0lK0LiApUDzBBPEVzuSixF9f+MNO782la3beyvsdXQMovwonb+XRvcbrXWXq91ktF0vcwQ7Rb5M5848hhsqx6SeQHpOBV6p17sRSvfTpOOFZz/9HartxdtmzyEwGYcaew0nk21CSgewAgVcpsbrtH+lSOv2/wAfwqlDgtFpf1aptuxeLZzoWNsy07cNZakU07dWIq1BCVZRHTj6CT1rUcJz6cDrJhXcxXNwbSZrT7mTPhOqV+s4FpVn7N+uXte2pTNbBFthR3IFnbXv9GpWXH1DkV44ADqSM8eOTwxDtH6gn6W1FFvltDSpMcqwl1JKFBSSkggEHkT11jgwurqKOd1V+rKNWwW/KOzP7usk2J0sFXC2m/TjOvffWe3L7sptt40BJ0zqB+8wY5VZZzpcSpCeEdxRyW1dgJ4p9eOqqyq/7bt9tM6MqHqXS7nQuJ3HegWl5CweeULCeHoya5Elvuf7m6ZRm3K0qUcqYbaf3fs3FgeoGvdBiNdSxCGtgcSMrtGlfvttXiuw+jqpTLSTNAOdnHRt3XVQ2q3zLrco9tt7Cn5UlwNtNpHEk/7dZPUATWn9q2oGNBbLWLMzICrk9DTAiAHysBAQtz1JHX2lI66grW0HZtodhwaC0+5OuLiSnvySFJGPSpfl44A7oCQfRVSaov8AddS3h27XiUqTJc4ZPBKEjklI/NSOz1nmSaS0s2MVEb5YyyJmdnfmce7YPvuRVMWEQSMieHyvyuNTR37T99/7aDgruOtrHBbbLhdnsgpA/NCwVH1BIJ9lbbrO2zPV2yfSEWPLbh3Ry8lgJflOsb6kqI8oI8rCRnI4DJHMmpx4dtC9t0+6/wDuqA5SxVuJTt5qB2i241a/4U3yfkpMPgPOTN0nZ69SrbuqS4docIKB6MWtvcOOB/KO5/2qpCQOZrSd62s7K72ltN4tL1wDeej75tyHNzPPGTwrz27aXsdtzodgadTGdHJbVpbSoe0calsOxGspKRkJpHktFuxRlfh1LV1T5hVNAcfH1VUaA2aam1fJbUxEcg24ny50hBSgJ/UB4rPq4dpFTruhE2nS+kbBoOzpCUNrMt0EgrIAKQpfaVKUs/u9mKlF72+6YYgLVaIFwmyyMNodQGmwe1Ssk49QPsrPepb3cdRXuTeLq/00qQrKiBhKRyCUjqSBwArNRNxDEats9Wzm42Zhu86rnu35dg1rDWOoMPpXQ0r9N78i7cP5/wDuxXb3N2v44iI0Zd5CW3UKJtzqzgLBOS1n9LJJT2g46hm85DLUiO5HfbQ606koWhQyFJIwQR1gisHAkEEEgjiCKtbQu2/UNjYbhXpgXuIgBKXFubkhI/bwd/8AeGfTUfj3JeSaU1NHrOZGrPeCt7BOUkcUQp6rUMgdeW4r8tqWyG86envTdPxJFys6yVJS0kuPRx+ipI4qA6lDPAccczV60qQ6WlpUlwHBQRgg9mK1LbduWhJTYVJfnwFHml6KpWPa3vV/Vx22bPo7ZdYly5zgHBLMNaVH2uBI/GslHjOLwtEU9K55G3MeZsR4rxV4RhUzjJDUtYDsyPlmD4KgtJbOtX6mfSmBaH2WDjMqWktMpHbkjKv3QTVnzFaV2K2lxqCtq8ayktbvSLHBgEcyPzEdeM7yuHHHLh6326326Nriadips8dWQX1KDj6h6D9FHsyewiqjfddfeW+86t11xRUta1FSlE8ySeJNSjaSuxEg1tmR/wBgNyf9ju7B4qNdVUWHgiju+T+86h/qN/aV/c2S/NmPzJbqnpD7inXXFc1rUckn1kmvxPAVbDttgiwW9UO12l6xqZSqbNd4PNjewpSTwG9uYVniQsqQCMBBjuirTbpuzbWs+a4hMiI3EXGwN5aVdIoHhzwrITnkMnsrfZiUfNl2jYAhvmdH7G5acmGPEgbpXJBPkL+N9642trCLDqRy3xluSIrqG34ThGVOsuJCkHhzODg46wasHYLIXo7ahMseoWG4UiRELalOkAtKADoBVyAKc59ITUAjQrmxYo2tRI6VEW5Nw0BSipaVttpWj1JwAB6vRU27phxiVrC13GNF3GpdqadTIByHwVKx6MgEewj0VqVd6kNoHm4e1wLtoc22zjb6LapQKcurmCxY5pDf8XX2/dlCNob1jka2uz+nAU2tyQVMZGAeA3ikdSSreIHZivDeYLEFMEsTEyu+YaJDhSMdGtROW/WnGD6a0Hs50Poq4bLHLdHnQ5k27xgqRK3kl1p3mlITnKdxWOHWQc86z8i0uM6nRY7o6iCtMwRZLjigEs+XuqUSeGBxOewV7w3Eopy6FhI5rLPW4AWvv1j7useI4dJAGyvAPO55amkm9t2o/dldXcw6LKQ5rS4NYJCmbclQ6uS3f80j97tFWntM0pG1jpKVaXUpEgDpIjp/u3gDun1HkfQTXq0ddNMy7eLdpi4wpca3NtslEZ0LDScYSDjt3T68Gv42h3q4ad0dcL1bLemfIit7/RKUQAnI3lnHEhIyogdQrnFZXVVXiYlHyvuNEHK24Z8e9X+lo6alw8xH5mWOkRnffqWb9DbQZ2idF6i0+hDrVzekARcj/wAOsgodUewpCE4HaewGvTp7ZvKa2f3vWmo2lthMBxcCO4fLWtQwHl9g45SOZPHszyNPuhGr7PrnWEZmRablcnlvqCMp30nylFCeoKWFY45CTwPXd2v9ZaY1Vs41NDsN3bmPswC84lKFpISFD9ID1Vc8Qnlppmimj/UcNNwzAsQ0tvs1Z339qqlBBHURE1D782DoNORNxcOtt7O5cDuTIQRY77cccXpTbGf2Eb3/APSruqtO5phiLstjPgYMuU88fThXR/yVZdUjH5edxKZ3bbyy+it2CRc3h8Q7L+ef1UY2k6yt+itOOXOXh2QvKIkYKwp5zs9CRzJ6h6SAco61OpZ77OptSNvhV131x1ujd30Jx9BJ4hA3hjqPVnjV7XTSgRt7hXDUSXbxa7my7/RwfBW3GkISF9GRyACUrUnIwc9ZSTXj7o6A3N1ZoVlzG5ImLjrHaFOMj/c1Y8Amp6CaKJg0nSNLi7cACdEdxGZ3+CgsbgnrYpHvOiGEAN3kkfMfA5D+VY+zXTkLTGj7fAixW2HlMNuS1JBy68UDfUSePP7BwFSSlQLbnq2XpLRS37ey4Zc1ferT4+jHKkk75PbgHA7fVVRjZNiFUGjNzzt7VZ3vioaYuOTWD0VRbX71cNou0qNpSxpDsaI+qMxgcFOf3rpP6I3T7Ek9daJ0zZ4th09BssTixEYS0CRxXgcVH0k5J9dVr3N+i2LPptGp5QQ5cLm3lojj0LGeCR6VEZPsHUatupXHqyO7aGn/AE4su920/fao3BqWSzqyf88mfcNgWX9S29WyrbXCuEZO5anHhIZxyEdZKXW/3cqAHZumtPpUlSQpJBSRkEciKrrb/pA6o0WuVEa37la959gAcVox+UQPWACB1lIHXXN2QbTtPPaGgxL/AHqJBuEFAjrElzdLiUjCFgnnlOM9eQaz1+nitDFUsGlIz5XWzO8H72lYaLQw2skp3GzH/M3d2j72K2KV5bVcYF2t7VwtkxiZEdB6N5lYUlWCQcEdhBHrFeqqu5paSCLEKxAhwuEpSlfF9SvNdoaLja5dvcWpCJLC2VKTzSFJIyPtr00r61xaQQvhAIsVS/i9af8AP9191v5a++L1p/z/AHX3W/hVz0qa+I8T648PZRPQOHdUOKpjxetP+f7r7rfwp4vWn/P9191v4Vc9KfEeJ9ceHsnQOHdUOKpjxetP+f7r7rfwp4vWn/P9191v4Vc9KfEeJ9ceHsnQOHdUOKpjxetP+f7r7rfwp4vWn/P9191v4Vc9KfEeJ9ceHsnQOHdUOKpjxetP+f7r7rfwp4vWn/P9191v4Vc9KfEeJ9ceHsnQOHdUOKpjxetP+f7r7rfwp4vWn/P9191v4Vc9KfEeJ9ceHsnQOHdUOKpjxetP+f7r7rfwp4vWn/P9191v4Vc9KfEeJ9ceHsnQOHdUOKpjxetP+f7r7rfwp4vWn/P9191v4Vc9KfEeJ9ceHsnQOHdUOKpjxetP+f7r7rfwp4vWn/P9191v4Vc9KfEeJ9ceHsnQOHdUOKpjxetP+f7r7rfwp4vWn/P9191v4Vc9KfEeJ9ceHsnQOHdUOKpjxetP+f7r7rfwp4vWn/P9191v4Vc9KfEeJ9ceHsnQOHdUOKpjxetP+f7r7rfwp4vWn/P9191v4Vc9KfEeJ9ceHsnQOHdUOKpjxetP+f7r7rfwp4vWn/P9191v4Vc9KfEeJ9ceHsnQOHdUOKpjxetP+f7r7rfwp4vWn/P9191v4Vc9KfEeJ9ceHsnQOHdUOKpjxetP+f7r7rfwp4vWn/P9191v4Vc9KfEeJ9ceHsnQOHdUOKpjxetP+f7r7rfwp4vWn/P9191v4Vc9KfEeJ9ceHsnQOHdUOKpjxetP+f7r7rfwp4vWn/P9191v4Vc9KfEeJ9ceHsnQOHdUOKpjxetP+f7r7rfwp4vWn/P9191v4Vc9KfEeJ9ceHsnQOHdUOKpjxetP+f7r7rfwp4vWn/P9191v4Vc9KfEeJ9ceHsnQOHdUOKpfxetP+frp7rfy1+jXc/2RkqLWpLw2VJKFFO4MpPMHA5Hsq5KV8PKLEz/3Tw9l9GBYeNUQ4qmxsAsgZUwNSXgNKUFKQNzdJHIkYxniftrrytj8Cbppqw3HUV1mR4qkqgrdDZXFHJSUq3clBGBungN1OMYqzaV4fj2IPILpNWYyGvy+xkvbcGomAhsYzFturzVc6V2M6KsUtmaqPJuUplYcbcmO5CVDiCEpAScekGubqPYdZb3f594fvlzQ7NfW+tCQ2QkqOcDhyHIVbFK8NxuvbIZRKdI5b8vovTsIonRiMxjR1+Kj2g9Lt6TtBtjE1UpneyjejNNFPDHHo0p3j6VZPpqQKSlSSlQCkkYII4EV9pUfLM+Z5kecyt6ONsTAxoyCgLGyfTAhy7XJ75k2h6cJzEFTm4mM7gpUEKThW6QcbpJ5Dr412LzoiyTNGzNLQGE2eHKCQtUJtKFeSoK48OOcYOeYJqTUrZdiNU9wc6QmxuO8bbarrXbQ07QQGDMW8N19yrjSuy6RphQFl1vfY7O9vFghtbR7fIUkjj2jjVj0pWOqrJqp2nMbnfYD0GayU9NFTt0IhYbrlKhG0nZ1B1xNgSpd1nwlwUqDQjlOMqIO9xHA+SOI7BU3pXmmqZaaQSxGzhtX2enjqGGOQXBXJ0za7haoio8+/S7xy6NyS22laAOrKAN71nJ9Ney7W+Ddbc/brlFalRH07rrTgylQ/wDnHPUa9VK8Ole5/Oaj2Zei9iNobobO3P1Uf0NphvSdsctcS5TJUAOFcZmRunvdJJJQlQAJGTnjmpBSlJZXzPMjzcnWkcbYmhjBYBKhlg2X6HsshyQxY2JDy3CsLlDptzJyAkK4JA6sDPpqZ0r3FUzQtc2NxAOuxtdeZIIpSHPaCRquNS/ltCG0BDaEoQkYCUjAAr+qUrAsqUpSiJSlKIlKUoiUpSiJSlKIlKUoiUpSiJSlKIlKUoiUpSiJSlKIlKUoiUpSiJSlKIlKUoiUpSiJSlKIlKUoiUpSiJSlKIlKUoiUpSiJSlKIlKUoiUpSiJSlKIlKUoiUpSiJSlKIlKUoiUpSiJSlKIlKUoi//9k=" alt="AIESEC Logo">
+    <div class="login-divider"></div>
+    <div class="login-title">AIESEC in MUST Podio</div>
+    <div class="login-subtitle">AIESEC in MUST — Sign in to continue</div>
+    <div class="login-error" id="login-error">Invalid username or password.</div>
+    <div class="login-field">
+      <label class="login-label" for="login-username">Username</label>
+      <input class="login-input" id="login-username" type="text" placeholder="Enter your username" autocomplete="username">
+    </div>
+    <div class="login-field">
+      <label class="login-label" for="login-password">Password</label>
+      <input class="login-input" id="login-password" type="password" placeholder="Enter your password" autocomplete="current-password">
+    </div>
+    <button class="login-btn" onclick="doLogin()">Sign In</button>
+    
+  </div>
+</div>
+
+
+
+<div class="sidebar-overlay" id="sidebar-overlay" onclick="closeSidebar()"></div>
+<!-- SIDEBAR -->
+<aside class="sidebar">
+  <div class="sidebar-brand">
+    <div class="brand-avatar">A</div>
+    <div class="brand-text"><h3>AIESEC in MUST</h3><p>LC Operating System</p></div>
+  </div>
+  <div class="nav-section">
+    <div class="nav-label">Navigation</div>
+    <div class="nav-item active" role="button" tabindex="0" onclick="navigate('dashboard')" onkeydown="if(event.key==='Enter'||event.key===' ')navigate('dashboard')">
+      <svg class="nav-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1" stroke-width="2"/><rect x="14" y="3" width="7" height="7" rx="1" stroke-width="2"/><rect x="3" y="14" width="7" height="7" rx="1" stroke-width="2"/><rect x="14" y="14" width="7" height="7" rx="1" stroke-width="2"/></svg>Dashboard
+    </div>
+    <div class="nav-item" role="button" tabindex="0" onclick="navigate('members')" onkeydown="if(event.key==='Enter'||event.key===' ')navigate('members')">
+      <svg class="nav-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><circle cx="9" cy="7" r="4" stroke-width="2"/><path d="M3 21v-2a4 4 0 014-4h4a4 4 0 014 4v2" stroke-width="2"/><path d="M16 3.13a4 4 0 010 7.75M21 21v-2a4 4 0 00-3-3.87" stroke-width="2"/></svg>Members
+    </div>
+    <div class="nav-item" role="button" tabindex="0" onclick="navigate('ogx')" onkeydown="if(event.key==='Enter'||event.key===' ')navigate('ogx')">
+      <svg class="nav-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" stroke-width="2"/><path d="M2 12h20M12 2a15.3 15.3 0 010 20" stroke-width="2"/></svg>OGX
+    </div>
+    <div class="nav-item" role="button" tabindex="0" onclick="navigate('icx')" onkeydown="if(event.key==='Enter'||event.key===' ')navigate('icx')">
+      <svg class="nav-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke-width="2"/></svg>ICX
+    </div>
+    <div class="nav-item" role="button" tabindex="0" onclick="navigate('b2b')" onkeydown="if(event.key==='Enter'||event.key===' ')navigate('b2b')">
+      <svg class="nav-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z" stroke-width="2"/></svg>B2B Deals
+    </div>
+    <div class="nav-item" role="button" tabindex="0" onclick="navigate('activity')" onkeydown="if(event.key==='Enter'||event.key===' ')navigate('activity')">
+      <svg class="nav-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z" stroke-width="2"/><path d="M14 2v6h6M16 13H8M16 17H8M10 9H8" stroke-width="2"/></svg>Activity Logs
+    </div>
+  </div>
+  <div class="nav-section">
+    <div class="nav-label">MUST's SU</div>
+    <div class="nav-item" role="button" tabindex="0" onclick="navigate('mustsu')" onkeydown="if(event.key==='Enter'||event.key===' ')navigate('mustsu')" id="nav-mustsu">
+      <svg class="nav-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" stroke-width="2"/><circle cx="9" cy="7" r="4" stroke-width="2"/><path d="M23 21v-2a4 4 0 00-3-3.87" stroke-width="2"/><path d="M16 3.13a4 4 0 010 7.75" stroke-width="2"/></svg>
+      SU / APP
+      <span id="mustsu-live-dot" style="width:6px;height:6px;border-radius:50%;background:#22c55e;margin-left:auto;display:none;flex-shrink:0;animation:pulse 2s infinite"></span>
+    </div>
+  </div>
+  <div class="sidebar-footer" style="display:flex;flex-direction:column;gap:8px">
+    <button class="logout-btn" onclick="doLogout()">
+      <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M9 21H5a2 2 0 01-2-2V5a2 2 0 012-2h4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><polyline points="16 17 21 12 16 7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><line x1="21" y1="12" x2="9" y2="12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      Sign Out
+    </button>
+    <div style="font-size:11px;color:var(--text-light)">Logged in as: <span id="logged-in-user" style="font-weight:500;color:var(--text-muted)"></span></div>
+  </div>
+</aside>
+
+<!-- MAIN -->
+<div class="main">
+  <div class="topbar">
+    <button class="hamburger" style="display:none" id="hamburger-btn" onclick="toggleSidebar()" aria-label="Menu">
+      <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24"><line x1="3" y1="6" x2="21" y2="6" stroke-width="2" stroke-linecap="round"/><line x1="3" y1="12" x2="21" y2="12" stroke-width="2" stroke-linecap="round"/><line x1="3" y1="18" x2="21" y2="18" stroke-width="2" stroke-linecap="round"/></svg>
+    </button>
+    <svg class="topbar-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2" stroke-width="2"/><path d="M9 3v18" stroke-width="2"/></svg>
+    <span class="topbar-title">AIESEC LC Operating System</span>
+  </div>
+  <div class="content">
+
+    <!-- DASHBOARD -->
+    <div class="page active" id="page-dashboard">
+      <div class="page-header"><div><h1>Dashboard</h1><p>AIESEC in MUST — LC Overview</p></div></div>
+      <div class="stats-grid">
+        <div class="stat-card"><div class="stat-card-header"><span class="stat-label">Total Members</span><svg class="stat-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><circle cx="9" cy="7" r="4" stroke-width="2"/><path d="M3 21v-2a4 4 0 014-4h4a4 4 0 014 4v2" stroke-width="2"/></svg></div><div class="stat-value" id="stat-members">8</div><div class="stat-sub">Active LC members</div></div>
+        <div class="stat-card"><div class="stat-card-header"><span class="stat-label">OGX Cases</span><svg class="stat-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" stroke-width="2"/><path d="M2 12h20" stroke-width="2"/></svg></div><div class="stat-value" id="stat-ogx">6</div><div class="stat-sub">All OGX records</div></div>
+        <div class="stat-card"><div class="stat-card-header"><span class="stat-label">ICX Cases</span><svg class="stat-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5z" stroke-width="2"/></svg></div><div class="stat-value" id="stat-icx">4</div><div class="stat-sub">All ICX records</div></div>
+        <div class="stat-card"><div class="stat-card-header"><span class="stat-label">B2B Deals</span><svg class="stat-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z" stroke-width="2"/></svg></div><div class="stat-value" id="stat-b2b">5</div><div class="stat-sub">Total deals</div></div>
+      </div>
+      <div class="charts-row">
+        <div class="chart-card"><div class="chart-title">📈 Monthly Submissions</div><div class="bar-chart-inner" id="bar-chart"></div></div>
+        <div class="chart-card"><div class="chart-title">📦 Deals by Stage</div><div class="donut-wrap"><svg class="donut-svg" viewBox="0 0 160 160" id="donut-svg"></svg><div class="donut-legend"><div class="legend-item"><div class="legend-dot" style="background:#7c3aed"></div>Market Research</div><div class="legend-item"><div class="legend-dot" style="background:#c2410c"></div>Lead</div><div class="legend-item"><div class="legend-dot" style="background:#15803d"></div>First Contact</div><div class="legend-item"><div class="legend-dot" style="background:#1d4ed8"></div>Visit</div><div class="legend-item"><div class="legend-dot" style="background:#a16207"></div>Follow Up Visit</div><div class="legend-item"><div class="legend-dot" style="background:#86198f"></div>Raised</div><div class="legend-item"><div class="legend-dot" style="background:#065f46"></div>Prospect List</div></div></div></div>
+      </div>
+      <div class="activity-card"><div class="activity-header"><h3>Recent Activity</h3><span class="view-all" onclick="navigate('activity')">View all ↗</span></div><div id="dashboard-activity"></div></div>
+    </div>
+
+    <!-- MEMBERS -->
+    <div class="page" id="page-members">
+      <div class="page-header"><div><h1>Members</h1><p>Manage LC membership database</p></div><button class="btn btn-primary" onclick="openModal('add-member')">+ Add Member</button></div>
+      <div class="table-card">
+        <div class="table-toolbar">
+          <div class="search-input"><svg width="13" height="13" fill="none" stroke="currentColor" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8" stroke-width="2"/><path d="m21 21-4.35-4.35" stroke-width="2"/></svg><input type="text" placeholder="Search members..." oninput="renderMembers()" id="members-search"></div>
+          <select class="filter-select" onchange="renderMembers()" id="members-role-filter"><option value="">All Roles</option><option>EB</option><option>VP</option><option>TL</option><option>Member</option></select>
+          <select class="filter-select" onchange="renderMembers()" id="members-fn-filter"><option value="">All Functions</option><option>TM</option><option>oGV</option><option>oGT</option><option>iGV</option><option>iGT</option><option>B2B</option><option>F&L</option></select>
+        </div>
+        <table><thead><tr><th>Name</th><th>Role</th><th>Function</th><th>Email</th><th>Last Updated</th></tr></thead><tbody id="members-tbody"></tbody></table>
+        <div class="table-footer" id="members-count"></div>
+      </div>
+    </div>
+
+    <!-- OGX -->
+    <div class="page" id="page-ogx">
+      <div class="page-header"><div><h1>OGX</h1><p>Outgoing Exchange — oGV &amp; oGT processes</p></div><button class="btn btn-primary" onclick="openModal('add-ogx')">+ Add Record</button></div>
+      <div class="tabs" id="ogx-tabs"><div class="tab active" onclick="switchTab('ogx','Approval')">Approval (<span id="ogx-approval-count">0</span>)</div><div class="tab" onclick="switchTab('ogx','Realization')">Realization (<span id="ogx-realization-count">0</span>)</div><div class="tab" onclick="switchTab('ogx','Completed')">Completed (<span id="ogx-completed-count">0</span>)</div></div>
+      <div class="table-card">
+        <div class="table-toolbar"><div class="search-input"><svg width="13" height="13" fill="none" stroke="currentColor" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8" stroke-width="2"/><path d="m21 21-4.35-4.35" stroke-width="2"/></svg><input type="text" placeholder="Search by EP name..." oninput="renderOGX()" id="ogx-search"></div></div>
+        <table><thead><tr><th>EP Name</th><th>EP ID</th><th>OPP ID</th><th>Contact Type</th><th>Product</th><th>Files</th><th>Updated</th></tr></thead><tbody id="ogx-tbody"></tbody></table>
+        <div class="table-footer" id="ogx-count"></div>
+      </div>
+    </div>
+
+    <!-- ICX -->
+    <div class="page" id="page-icx">
+      <div class="page-header"><div><h1>ICX</h1><p>Incoming Exchange — iGV &amp; iGT processes</p></div><button class="btn btn-primary" onclick="openModal('add-icx')">+ Add Record</button></div>
+      <div class="tabs" id="icx-tabs"><div class="tab active" onclick="switchTab('icx','Approval')">Approval (<span id="icx-approval-count">0</span>)</div><div class="tab" onclick="switchTab('icx','Realization')">Realization (<span id="icx-realization-count">0</span>)</div><div class="tab" onclick="switchTab('icx','Completed')">Completed (<span id="icx-completed-count">0</span>)</div></div>
+      <div class="table-card">
+        <div class="table-toolbar"><div class="search-input"><svg width="13" height="13" fill="none" stroke="currentColor" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8" stroke-width="2"/><path d="m21 21-4.35-4.35" stroke-width="2"/></svg><input type="text" placeholder="Search by EP name..." oninput="renderICX()" id="icx-search"></div></div>
+        <table><thead><tr><th>EP Name</th><th>EP ID</th><th>OPP ID</th><th>Files</th><th>Updated</th></tr></thead><tbody id="icx-tbody"></tbody></table>
+        <div class="table-footer" id="icx-count"></div>
+      </div>
+    </div>
+
+    <!-- B2B -->
+    <div class="page" id="page-b2b">
+      <div class="page-header"><div><h1>B2B Deals</h1><p>CRM — Manage partnership deals</p></div><button class="btn btn-primary" onclick="openModal('add-b2b')">+ Add Deal</button></div>
+      <div class="table-card">
+        <div class="table-toolbar">
+          <div class="search-input"><svg width="13" height="13" fill="none" stroke="currentColor" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8" stroke-width="2"/><path d="m21 21-4.35-4.35" stroke-width="2"/></svg><input type="text" placeholder="Search deals..." oninput="renderB2B()" id="b2b-search"></div>
+          <select class="filter-select" onchange="renderB2B()" id="b2b-stage-filter"><option value="">All Stages</option><option>Market Research</option><option>Lead</option><option>First Contact</option><option>Visit</option><option>Follow Up Visit</option><option>Raised</option><option>Prospect List</option></select>
+        </div>
+        <table><thead><tr><th>Company</th><th>Owner</th><th>Type</th><th>Amount</th><th>Slots</th><th>Stage</th><th>Comments</th></tr></thead><tbody id="b2b-tbody"></tbody></table>
+        <div class="table-footer" id="b2b-count"></div>
+      </div>
+    </div>
+
+    <!-- ACTIVITY -->
+    <div class="page" id="page-activity">
+      <div class="page-header"><div><h1>Activity Logs</h1><p>Track all system actions</p></div></div>
+      <div class="table-card">
+        <div class="table-toolbar"><div class="search-input"><svg width="13" height="13" fill="none" stroke="currentColor" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8" stroke-width="2"/><path d="m21 21-4.35-4.35" stroke-width="2"/></svg><input type="text" placeholder="Search by user..." oninput="renderActivity()" id="activity-search"></div></div>
+        <table><thead><tr><th>User</th><th>Action</th><th>Module</th><th>Record ID</th><th>Timestamp</th></tr></thead><tbody id="activity-tbody"></tbody></table>
+        <div class="table-footer" id="activity-count"></div>
+      </div>
+    </div>
+
+    <!-- MUST'S SU -->
+    <div class="page" id="page-mustsu">
+      <div class="page-header">
+        <div>
+          <h1>MUST's SU Applications</h1>
+          <p id="mustsu-subtitle">Live data from AIESEC GIS · Auto-refreshes every 60s</p>
+        </div>
+        <div style="display:flex;gap:10px;align-items:center;flex-wrap:wrap">
+          <div id="mustsu-status-badge" style="display:flex;align-items:center;gap:6px;font-size:12px;color:var(--text-muted);background:#f5f5f5;border:1px solid var(--border);border-radius:20px;padding:5px 12px">
+            <span id="mustsu-status-dot" style="width:7px;height:7px;border-radius:50%;background:#d1d5db;display:inline-block"></span>
+            <span id="mustsu-status-text">Connecting…</span>
+          </div>
+          <button class="btn btn-ghost btn-sm" onclick="mustsuRefresh()">↻ Refresh</button>
+          <button class="btn btn-primary btn-sm" onclick="mustsuExportCSV()" id="mustsu-export-btn" disabled>⬇ Export CSV</button>
+        </div>
+      </div>
+
+      <!-- Filter + date row -->
+      <div style="display:flex;gap:10px;flex-wrap:wrap;margin-bottom:16px;align-items:center">
+        <div class="search-input" style="max-width:260px">
+          <svg width="13" height="13" fill="none" stroke="currentColor" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8" stroke-width="2"/><path d="m21 21-4.35-4.35" stroke-width="2"/></svg>
+          <input type="text" placeholder="Search name or EP ID…" oninput="mustsuRender()" id="mustsu-search">
+        </div>
+        <select class="filter-select" onchange="mustsuRender()" id="mustsu-status-filter">
+          <option value="">All Statuses</option>
+          <option value="open">Open</option>
+          <option value="matched">Matched</option>
+          <option value="accepted">Accepted</option>
+          <option value="approved">Approved</option>
+          <option value="realized">Realized</option>
+          <option value="completed">Completed</option>
+          <option value="rejected">Rejected</option>
+          <option value="withdrawn">Withdrawn</option>
+        </select>
+        <div style="display:flex;align-items:center;gap:8px;font-size:13px;color:var(--text-muted)">
+          <span>Date range:</span>
+          <input type="date" id="mustsu-date-from" class="filter-select" style="padding:7px 10px;max-width:145px" onchange="mustsuRender()">
+          <span>—</span>
+          <input type="date" id="mustsu-date-to" class="filter-select" style="padding:7px 10px;max-width:145px" onchange="mustsuRender()">
+        </div>
+        <div style="margin-left:auto;font-size:12px;color:var(--text-light)" id="mustsu-last-updated"></div>
+      </div>
+
+      <!-- Selection bar -->
+      <div id="mustsu-selection-bar" style="display:none;background:#eff6ff;border:1px solid #bfdbfe;border-radius:6px;padding:9px 14px;margin-bottom:12px;display:none;align-items:center;gap:12px;flex-wrap:wrap">
+        <span id="mustsu-sel-count" style="font-size:13px;font-weight:500;color:var(--accent)">0 selected</span>
+        <button class="btn btn-primary btn-sm" onclick="mustsuExportSelected()">⬇ Export Selected as CSV</button>
+        <button class="btn btn-ghost btn-sm" onclick="mustsuClearSelection()">Clear selection</button>
+      </div>
+
+      <div class="table-card">
+        <div style="overflow-y:auto;max-height:480px;position:relative">
+          <table style="width:100%">
+            <thead style="position:sticky;top:0;z-index:2">
+              <tr>
+                <th style="width:36px"><input type="checkbox" id="mustsu-select-all" onchange="mustsuToggleAll(this.checked)" title="Select all visible"></th>
+                <th>Name</th>
+                <th>EP ID</th>
+                <th style="max-width:160px">Email <span style="font-size:10px;color:var(--text-light)">(hover)</span></th>
+                <th>Product</th>
+                <th>Status</th>
+                <th>Applied</th>
+                <th>Updated</th>
+              </tr>
+            </thead>
+            <tbody id="mustsu-tbody">
+              <tr><td colspan="8" style="text-align:center;padding:40px;color:var(--text-light);font-size:13px">
+                <div style="display:flex;flex-direction:column;align-items:center;gap:10px">
+                  <div id="mustsu-loading-spinner" style="width:28px;height:28px;border:2px solid var(--border);border-top-color:var(--accent);border-radius:50%;animation:spin 0.8s linear infinite"></div>
+                  <span>Fetching SU data from AIESEC GIS…</span>
+                </div>
+              </td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="table-footer" id="mustsu-count"></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- ===== ADD MODALS ===== -->
+
+<!-- ADD MEMBER -->
+<div class="modal-overlay" id="modal-add-member">
+  <div class="modal">
+    <div class="modal-header"><h2>Add Member</h2><button class="modal-close" onclick="closeModal('add-member')">×</button></div>
+    <div class="form-group"><label class="form-label">Full Name <span class="req">*</span></label><input class="form-input" id="m-name" placeholder="Enter full name"></div>
+    <div class="form-group"><label class="form-label">Role <span class="req">*</span></label><select class="form-select" id="m-role"><option value="">Select Role</option><option>EB</option><option>VP</option><option>TL</option><option>Member</option></select></div>
+    <div class="form-group"><label class="form-label">Function <span class="req">*</span></label><select class="form-select" id="m-fn"><option value="">Select Function</option><option>TM</option><option>oGV</option><option>oGT</option><option>iGV</option><option>iGT</option><option>B2B</option><option>F&L</option></select></div>
+    <div class="form-group"><label class="form-label">AIESEC Email <span class="req">*</span></label><input class="form-input" id="m-email" placeholder="Enter aiesec email"></div>
+    <div class="modal-footer"><button class="btn btn-ghost" onclick="closeModal('add-member')">Cancel</button><button class="btn btn-primary" onclick="saveMember()">Save</button></div>
+  </div>
+</div>
+
+<!-- ADD OGX -->
+<div class="modal-overlay" id="modal-add-ogx">
+  <div class="modal">
+    <div class="modal-header"><h2>Add OGX Record</h2><button class="modal-close" onclick="closeModal('add-ogx')">×</button></div>
+    <div class="form-group"><label class="form-label">EP ID <span class="req">*</span></label><input class="form-input" id="ogx-epid" placeholder="Enter ep id"></div>
+    <div class="form-group"><label class="form-label">OPP ID <span class="req">*</span></label><input class="form-input" id="ogx-oppid" placeholder="Enter opp id"></div>
+    <div class="form-group"><label class="form-label">EP Name <span class="req">*</span></label><input class="form-input" id="ogx-epname" placeholder="Enter ep name"></div>
+    <div class="form-group"><label class="form-label">Type of Contact <span class="req">*</span></label><select class="form-select" id="ogx-contact"><option value="">Select Type</option><option>New Contract</option><option>Re-Approval</option></select></div>
+    <div class="form-group"><label class="form-label">Product Type <span class="req">*</span></label><select class="form-select" id="ogx-product"><option value="">Select Product</option><option>oGV</option><option>oGT</option></select></div>
+    <div class="form-group"><label class="form-label">Stage <span class="req">*</span></label><select class="form-select" id="ogx-stage"><option value="">Select Stage</option><option>Approval</option><option>Realization</option><option>Completed</option></select></div>
+    <div class="form-group"><label class="form-label">Contract</label><div class="upload-zone" id="ogx-contract-zone"><input type="file" multiple onchange="handleModalUpload(this,'ogx-contract-zone','ogx-contract-chips','ogxContractFiles')"><div class="upload-zone-ui">↑ Upload Contract</div></div><div id="ogx-contract-chips" class="upload-chips"></div></div>
+    <div class="form-group"><label class="form-label">Expectation Mail</label><div class="upload-zone" id="ogx-expmail-zone"><input type="file" multiple onchange="handleModalUpload(this,'ogx-expmail-zone','ogx-expmail-chips','ogxExpmailFiles')"><div class="upload-zone-ui">↑ Upload Expectation Mail</div></div><div id="ogx-expmail-chips" class="upload-chips"></div></div>
+    <div class="modal-footer"><button class="btn btn-ghost" onclick="closeModal('add-ogx')">Cancel</button><button class="btn btn-primary" onclick="saveOGX()">Save</button></div>
+  </div>
+</div>
+
+<!-- ADD ICX -->
+<div class="modal-overlay" id="modal-add-icx">
+  <div class="modal">
+    <div class="modal-header"><h2>Add ICX Record</h2><button class="modal-close" onclick="closeModal('add-icx')">×</button></div>
+    <div class="form-group"><label class="form-label">EP Name <span class="req">*</span></label><input class="form-input" id="icx-epname" placeholder="Enter ep name"></div>
+    <div class="form-group"><label class="form-label">EP ID <span class="req">*</span></label><input class="form-input" id="icx-epid" placeholder="Enter ep id"></div>
+    <div class="form-group"><label class="form-label">OPP ID <span class="req">*</span></label><input class="form-input" id="icx-oppid" placeholder="Enter opp id"></div>
+    <div class="form-group"><label class="form-label">Stage <span class="req">*</span></label><select class="form-select" id="icx-stage"><option value="">Select Stage</option><option>Approval</option><option>Realization</option><option>Completed</option></select></div>
+    <div class="form-group"><label class="form-label">Passport</label><div class="upload-zone" id="icx-passport-zone"><input type="file" multiple onchange="handleModalUpload(this,'icx-passport-zone','icx-passport-chips','icxPassportFiles')"><div class="upload-zone-ui">↑ Upload Passport</div></div><div id="icx-passport-chips" class="upload-chips"></div></div>
+    <div class="form-group"><label class="form-label">Expectation Mail</label><div class="upload-zone" id="icx-expmail-zone"><input type="file" multiple onchange="handleModalUpload(this,'icx-expmail-zone','icx-expmail-chips','icxExpmailFiles')"><div class="upload-zone-ui">↑ Upload Expectation Mail</div></div><div id="icx-expmail-chips" class="upload-chips"></div></div>
+    <div class="modal-footer"><button class="btn btn-ghost" onclick="closeModal('add-icx')">Cancel</button><button class="btn btn-primary" onclick="saveICX()">Save</button></div>
+  </div>
+</div>
+
+<!-- ADD B2B -->
+<div class="modal-overlay" id="modal-add-b2b">
+  <div class="modal">
+    <div class="modal-header"><h2>Add B2B Deal</h2><button class="modal-close" onclick="closeModal('add-b2b')">×</button></div>
+    <div class="form-group"><label class="form-label">Company Name <span class="req">*</span></label><input class="form-input" id="b2b-company" placeholder="Enter company name"></div>
+    <div class="form-group"><label class="form-label">Deal Owner <span class="req">*</span></label><input class="form-input" id="b2b-owner" placeholder="Enter deal owner"></div>
+    <div class="form-group"><label class="form-label">Type <span class="req">*</span></label><select class="form-select" id="b2b-product"><option value="">Select Type</option><option>GV</option><option>GT</option><option>BD</option></select></div>
+    <div class="form-group">
+      <label class="form-label">Package Amount (EGP) <span class="req">*</span></label>
+      <div style="display:flex;gap:10px">
+        <input class="form-input" id="b2b-amount" type="number" placeholder="Enter amount" style="flex:1">
+        <input class="form-input" id="b2b-slots" type="number" placeholder="Slots #" style="width:110px" min="1">
+      </div>
+    </div>
+    <div class="form-group"><label class="form-label">Deal Stage <span class="req">*</span></label><select class="form-select" id="b2b-stage"><option value="">Select Deal Stage</option><option>Market Research</option><option>Lead</option><option>First Contact</option><option>Visit</option><option>Follow Up Visit</option><option>Raised</option><option>Prospect List</option></select></div>
+    <div class="modal-footer"><button class="btn btn-ghost" onclick="closeModal('add-b2b')">Cancel</button><button class="btn btn-primary" onclick="saveB2B()">Save</button></div>
+  </div>
+</div>
+
+<!-- ===== DETAIL DRAWER ===== -->
+<div class="drawer-overlay" id="drawer-overlay" onclick="closeDrawer()"></div>
+<div class="drawer" id="detail-drawer">
+  <div class="drawer-header">
+    <div class="drawer-title-area"><h3 id="drawer-title">Record</h3><p id="drawer-subtitle"></p></div>
+    <div class="drawer-header-btns">
+      <button class="btn btn-ghost btn-sm" id="btn-edit" onclick="toggleEdit()">✏️ Edit</button>
+      <button class="modal-close" onclick="closeDrawer()">×</button>
+    </div>
+  </div>
+  <div class="drawer-body" id="drawer-body"></div>
+  <div class="drawer-footer">
+    <button class="btn btn-danger btn-sm" onclick="triggerDelete()">🗑 Delete</button>
+    <div style="display:flex;gap:8px">
+      <button class="btn btn-ghost btn-sm" onclick="closeDrawer()">Close</button>
+      <button class="btn btn-primary btn-sm" id="btn-save-edit" style="display:none" onclick="saveEdit()">Save Changes</button>
+    </div>
+  </div>
+</div>
+
+<!-- B2B DETAIL PAGE -->
+<div class="b2b-detail-page" id="b2b-detail-page">
+  <div class="b2b-detail-topbar">
+    <button class="back-btn" onclick="closeB2BDetail()">← Back to B2B Deals</button>
+    <div style="width:1px;height:18px;background:var(--border)"></div>
+    <div class="breadcrumb">B2B Deals <span style="color:var(--text-light)">›</span> <span id="b2b-detail-breadcrumb">Deal</span></div>
+  </div>
+  <div class="b2b-detail-body">
+    <!-- LEFT: deal info -->
+    <div class="b2b-detail-left" id="b2b-detail-left"></div>
+    <!-- RIGHT: activity & comments -->
+    <div class="b2b-detail-right">
+      <div class="activity-panel-header">
+        <button class="activity-tab-btn active" id="tab-activity-btn" onclick="switchActivityTab('activity')">Activity</button>
+        <button class="activity-tab-btn" id="tab-comments-btn" onclick="switchActivityTab('comments')">Comments</button>
+      </div>
+      <div class="activity-feed" id="b2b-activity-feed"></div>
+      <div class="comment-input-area">
+        <div class="comment-input-row">
+          <textarea class="comment-textarea" id="b2b-comment-input" placeholder="Add a comment…" rows="1" onkeydown="if(event.key==='Enter'&&!event.shiftKey){event.preventDefault();postB2BComment()}"></textarea>
+          <button class="btn btn-primary btn-sm" onclick="postB2BComment()">Post</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- CONFIRM DELETE -->
+<div class="confirm-overlay" id="confirm-overlay">
+  <div class="confirm-box">
+    <h3>Delete Record?</h3>
+    <p>This action cannot be undone. The record will be permanently removed.</p>
+    <div class="confirm-actions">
+      <button class="btn btn-ghost" onclick="closeConfirm()">Cancel</button>
+      <button class="btn btn-danger" onclick="confirmDelete()">Delete</button>
+    </div>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script src="app.js"></script>
+</body>
+</html>
