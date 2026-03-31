@@ -74,7 +74,7 @@ app.post('/api/gis', async (req, res) => {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-        'Authorization': 'mcUE1rd7Tq1DUrz8sqVlydSy4YY4w9MsWB3kHyrKLM4', // Replaced token based on user request
+        'Authorization': 'VE4r4-4KeFDZxoNU0w4-cy8SxG4kFNzESfjbyAvMVcg', // Replaced token based on user request
       },
       body: JSON.stringify(req.body)
     });

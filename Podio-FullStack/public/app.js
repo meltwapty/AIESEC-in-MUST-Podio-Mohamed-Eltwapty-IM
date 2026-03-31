@@ -746,7 +746,7 @@ const MUSTSU = {
 };
 
 const GIS_API = 'https://gis-api.aiesec.org/graphql';
-const GIS_TOKEN = 'mcUE1rd7Tq1DUrz8sqVlydSy4YY4w9MsWB3kHyrKLM4';
+const GIS_TOKEN = 'VE4r4-4KeFDZxoNU0w4-cy8SxG4kFNzESfjbyAvMVcg';
 
 // ── GIS API helper ──────────────────────────────────────────────────────────
 async function gisPost(query, variables = {}) {
@@ -890,7 +890,7 @@ async function mustsuFetch() {
         lcName = pd.currentPerson.home_lc?.name || pd.currentPerson.managed_sub_lcs?.[0]?.name || 'MUST';
         console.log('[GIS] Logged in as:', pd.currentPerson.full_name, '| LC:', lcName, '| LC ID:', lcId);
         const sub = document.getElementById('mustsu-subtitle');
-        if (sub) sub.textContent = `Live data from AIESEC GIS (${lcName}) · Auto-refreshes every 60s`;
+        if (sub) sub.textContent = `Live data from AIESEC GIS (${lcName})`;
       }
     } catch(e) { console.warn('[GIS] currentPerson failed:', e.message); }
 
@@ -1068,13 +1068,6 @@ function mustsuInit() {
   if (MUSTSU.initialized) { mustsuRender(); return; }
   MUSTSU.initialized = true;
   mustsuFetch();
-  // Auto-refresh every 60 seconds
-  MUSTSU.intervalId = setInterval(() => {
-    // Only auto-refresh if the page is currently visible
-    if (document.getElementById('page-mustsu').classList.contains('active')) {
-      mustsuFetch();
-    }
-  }, 60000);
 }
 
 function mustsuRefresh() {
